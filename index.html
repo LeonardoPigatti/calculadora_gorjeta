@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calcule seu IMC</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <section class="container">
+    <h1>Calculadora de gorjeta</h1>
+    <form action="/" id="formulario" method="POST">
+      <label for="valor">Valor do Jantar</label>
+      <input type="text" id="valor" name="valor">
+      <label for="taxa">--Defina a Taxa --</label>
+      <select id="taxa" name="taxa">
+        <option value="0.30">30</option>
+        <option value="0.20">20</option>
+        <option value="0.15">15</option>
+        <option value="0.10">10</option>
+        <option value="0.5">5</option>
+      </select>
+      <label for="cliente">Quantas pessoas vão dividir a conta?</label>
+      <input type="text" id="cliente" name="cliente">
+      <button type="submit">Enviar</button>
+    </form>
+
+    <div id="resultado"></div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
